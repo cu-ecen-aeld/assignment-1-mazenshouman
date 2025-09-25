@@ -20,5 +20,5 @@ void test_validate_my_username()
      */
     
 
-    TEST_ASSERT_TRUE_MESSAGE(((strcmp(my_username(), malloc_username_from_conf_file())==0)?true:false),"AESD students, please fix me!");
+    TEST_ASSERT_EQUAL_STRING_MESSAGE(my_username(), malloc_username_from_conf_file(),"AESD students, please fix me!");
 }
